@@ -2,21 +2,18 @@
 <html lang="en">
 <head>
      <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="./script.js"></script>
      <title>Desafió encriptador</title>
-     <script src="/script.js"></script>
 </head>
 <body>
-     <form action="">
-          <label for="original-text">Texto a encriptar</label>
-          <input type="text" id="original-text"><br><br>
-
-          <input type="button" value="reemplazar" onclick="reemplazarVocales()"><br><br>
-
-          <label for="encripted-text">Resultado:</label>
-          <p id="encripted-text"></p>
-          
-     </form>
-</body>
+     <section>
+          <label for="texto-original">Texto original:</label>
+          <input type="text" id="texto-original"><br><br>
+          <input type="button" value="Reemplazar" onclick="reemplazarVocales()"><br><br>
+          <input type="button" value="Revertir" onclick="revertirReemplazo()"><br><br>
+          <label for="texto-reemplazado">Texto:</label>
+          <p id="texto-reemplazado"></p>
+     </section>
+        
 </html>
