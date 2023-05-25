@@ -4,16 +4,37 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script src="./script.js"></script>
+     <script src="/copy.js"></script>
+     <link rel="stylesheet" href="/reset.css">
+     <link rel="stylesheet" href="/style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
      <title>Desafió encriptador</title>
 </head>
 <body>
-     <section>
-          <label for="texto-original">Texto original:</label>
-          <input type="text" id="texto-original"><br><br>
-          <input type="button" value="Reemplazar" onclick="reemplazarVocales()"><br><br>
-          <input type="button" value="Revertir" onclick="revertirReemplazo()"><br><br>
-          <label for="texto-reemplazado">Texto:</label>
-          <p id="texto-reemplazado"></p>
-     </section>
-        
+     <header>
+          <img class="logo" src="/img/logo.svg" alt="Logo Alura-ONE">
+     </header>
+     <main>
+          <section class="texto">
+               <textarea class="input-text" cols="20" rows="5" placeholder="Ingrese el texto aqui" id="texto-original"></textarea>
+               <div class="warning">
+                    <span class="img-warning"></span>
+                    <h6>Solo letras minúsculas y sin acentos</h6>
+               </div>
+
+               <div class="button">
+                    <input class="primary-button" type="button" value="Encriptar" onclick="reemplazarVocales()">
+                    <input class="secondary-button" type="button" value="Desencriptar" onclick="revertirReemplazo()">
+               </div>
+
+               <section class="reemplazo">
+                    <textarea id="texto-reemplazado" class="input-text"></textarea>
+                    <div>
+                         <button id="boton-copiar" class="copiar">Copiar</button>
+                    </div>
+               </section>
+          </section>
+     </main> 
 </html>

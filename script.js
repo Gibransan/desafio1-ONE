@@ -26,7 +26,7 @@ function reemplazarVocales() {
                reemplazo = letra;
           }
 
-     textoReemplazado += reemplazo;
+     textoReemplazado = textoReemplazado + reemplazo;
      }
 
      document.getElementById("texto-reemplazado").innerHTML = textoReemplazado;
